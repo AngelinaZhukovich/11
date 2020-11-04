@@ -5,6 +5,7 @@ box-sizing: border-box;
 body  {
     background: gray;
     margin: 0;
+    font-family: "Poppins";
 }
 
 .aside {
@@ -29,7 +30,7 @@ body  {
 
 }
 
-.nav::before, .nav:::after {
+.nav::before, .nav::after {
     display: block;
     content: "";
     background-color: white;
@@ -42,7 +43,7 @@ body  {
 }
 
 
-.content {
+.main-content {
     margin-left: 150px;
     padding: absolute;
 
@@ -112,4 +113,12 @@ transform: translateX(-50%);
 border-radius: 6px;
 background-color: #f6f6f6;
 margin: 0 30px;
+padding: 0 62px;
+}
+
+@media {
+   ( max-width: 768px;)
+   .services {
+    flex-direction: column;    
+}
 }
