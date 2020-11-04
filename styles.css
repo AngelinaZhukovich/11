@@ -3,7 +3,7 @@ box-sizing: border-box;
 }
 
 body  {
-    background: red;
+    background: gray;
     margin: 0;
 }
 
@@ -44,9 +44,21 @@ body  {
 
 .content {
     margin-left: 150px;
-    padding: relative;
+    padding: absolute;
 
 }
+
+.a1 {
+    position: relative;
+    text-align:center
+}
+.a2 {
+    position: relative
+
+    
+}
+
+
 .logo {
     text-align:center ;
     position: relative;
@@ -72,6 +84,7 @@ transform: translateX(-50%);
 }
 
 .a1 {
+    
 
 }
 .a2 {
@@ -89,4 +102,14 @@ transform: translateX(-50%);
     fill: blanchedalmond;
     width: 25px;
     
+}
+
+.services {
+    display: flex;
+    
+}
+.services > .item   {
+border-radius: 6px;
+background-color: #f6f6f6;
+margin: 0 30px;
 }
