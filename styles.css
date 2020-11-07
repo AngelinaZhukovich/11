@@ -51,8 +51,15 @@ body  {
 
 .a1 {
     position: relative;
-    text-align:center
+    text-align:center;
+    text-align: left;
+    text-align: left;
+    line-height: normal;
+
 }
+
+
+
 .a2 {
     position: relative
 
