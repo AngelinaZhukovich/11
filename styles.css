@@ -23,6 +23,7 @@ body  {
 .nav > ul {
     list-style: none;
     color: blanchedalmond;
+    line-height: 35px;
     
 }
 .nav a {
@@ -55,8 +56,8 @@ body  {
     text-align:center;
     text-align: left;
     line-height: normal;
-    padding: 100px;
-    padding-left: 325px;
+    padding: 200px;
+    padding-left: 200px;
     line-height: 36px;
     font-size: 22px;
     
@@ -71,6 +72,9 @@ body  {
     margin-bottom: 58px;
 }
 
+.a1 p {
+    line-height: 36px;
+}
 
 
 
@@ -136,20 +140,28 @@ margin: 0 30px;
 padding: 0 62px;
 }
 
-
-
-@media 
-   (max-width: 768px){
-   .services {
-    flex-direction: column;    
+.services .item p {
+    line-height: 30px;
 }
-   }
+ 
+.services .icon svg {
+
+}
+.services .icon image{
+    
+    fill: #4cb480;
+}
+
+
+
 
 .a3 {
     padding: 200px;
 
 }
-
+.a3 p {
+    line-height: 38.02px;
+}
 
 .a4 {
     background-color: white;
@@ -158,9 +170,37 @@ padding: 0 62px;
     padding: 25px ;
 }
 
+.a41  {
+    display: flex;
+}
+
+
+
+
 
 .a5 {
     background-color: #353a3f;
     width: 1450px;
     height: 440px;
 }
+
+@media 
+   (max-width: 768px){
+   .services {
+    flex-direction: column;    
+}
+   }
+
+   @media 
+   (max-width: 768px){
+    .aside {
+        width: auto;
+        height: auto;
+        background-color: #282d32;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    
+    }
+   }
