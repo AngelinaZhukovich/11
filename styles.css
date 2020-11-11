@@ -165,19 +165,50 @@ padding: 0 62px;
 
 .a4 {
     background-color: white;
-    width: 1600px;
+    width: none;
     height: 3840px;
     padding: 25px ;
 }
 
-.a41  {
-    display: flex;
+/*.blog  {
+    padding: 40px;
+    
 }
 
+.blog__heading {
+text-transform: uppercase;
+font-size: 44px;
 
 
+}
+
+.blog__content {}
 
 
+.post {
+    
+    margin-bottom: 30px;
+
+}
+.post-preview__desc {
+    padding: 20px 20px 20px 40px;
+   
+}
+
+.post-preview:last-child {
+    margin-bottom: 0;
+}
+
+.post-preview_img img {
+    display: block;
+    object-fit: cover;
+
+
+}
+
+.post-preview
+
+*/
 .a5 {
     background-color: #353a3f;
     width: 1450px;
