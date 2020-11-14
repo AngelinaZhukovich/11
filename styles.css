@@ -31,11 +31,16 @@ body  {
     color: blanchedalmond;
 
 }
-
-.nav::before, .nav::after {
+/*
+.nav hr {
+    width: 90x;
+    height: 2px; */
+}
+.nav::before, .nav::after hr {
+   
     display: block;
-    content: "";
-    background-color: white;
+    content: ""  ;
+    background-color:white;
     width: 90px;
     height: 2px;
     position: absolute;
@@ -230,6 +235,7 @@ font-size: 44px;
 */
 footer {
     background-color: #282d32;
+    ;
 }
 
 .nav
@@ -258,4 +264,5 @@ footer {
    }
    .toggle:checked + ul {
 display: none;
+
    }
