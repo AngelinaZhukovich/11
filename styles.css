@@ -166,8 +166,19 @@ padding: 0 62px;
 .a4 {
     background-color: white;
     width: none;
-    height: 3840px;
+    height: none;
     padding: 25px ;
+   
+}
+
+.blog {
+    padding: 40px;
+    
+}
+
+.blog__heading {
+    display: flex;
+    margin-bottom: 30px;
 }
 
 /*.blog  {
@@ -208,12 +219,22 @@ font-size: 44px;
 
 .post-preview
 
-*/
+
 .a5 {
+    position: absolute;
     background-color: #353a3f;
-    width: 1450px;
-    height: 440px;
+    width: none;
+    height: none;
+    margin: auto;
 }
+*/
+footer {
+    background-color: #282d32;
+}
+
+.nav
+
+
 
 @media 
    (max-width: 768px){
