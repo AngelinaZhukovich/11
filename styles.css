@@ -7,16 +7,17 @@ body  {
     background: gray;
     margin: 0;
     font-family: "Poppins";
+    
 }
 
 .aside {
     width: 150px;
-    height: 100%;
     background-color: #282d32;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 10px;
+    height: 100%;
 
 }
 
@@ -31,28 +32,38 @@ body  {
     color: blanchedalmond;
 
 }
-/*
-.nav hr {
-    width: 90x;
-    height: 2px; */
-}
-.nav::before, .nav::after hr {
+
+
+.nav:after .nav::before  {
    
     display: block;
-    content: ""  ;
+    content: "" ;
+    position: absolute;
     background-color:white;
+    align-content: center;
     width: 90px;
     height: 2px;
-    position: absolute;
-    top: 0;
-    left: 50%;
+    bottom: -28px;
+    left: 50% ;
     transform: translateX(-50%);
 }
+
+.logo > p:after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #4cb480;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
 
 
 .main-content {
     margin-left: 150px;
-    padding: absolute;
+    
 
 }
 
@@ -81,7 +92,20 @@ body  {
     line-height: 36px;
 }
 
-
+button {
+    border-radius: 40px; 
+    border: 0;
+    padding: 0;
+    background-color: #4cb480; 
+    width: 200px; 
+    height: 60px;
+    margin: 15px 0 ;
+    
+}
+button a {
+    text-decoration: none;
+    font-size: large;
+}
 
 
 .logo {
@@ -95,18 +119,7 @@ body  {
     color: #4cb480;;
 }
 
-.logo > p:after {
-display: block;
-content: "";
-width: 50px;
-height: 4px;
-background-color: #4cb480;
-position: absolute;
-bottom: -8px;
-left: 50%;
-transform: translateX(-50%);
 
-}
 
 .a2 {
     position: relative;
@@ -162,11 +175,25 @@ padding: 0 62px;
 
 .a3 {
     padding: 200px;
+    background-color: #282d32;
 
 }
 .a3 p {
     line-height: 38.02px;
 }
+
+.a3> p:after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
 
 .a4 {
     background-color: white;
@@ -174,6 +201,13 @@ padding: 0 62px;
     height: none;
     padding: 25px ;
    
+}
+.a4 > p::before{
+    display: block;
+    background: #4cb480;
+    width: 20px;
+    height: 20px;
+    position: absolute;
 }
 
 .blog {
@@ -186,60 +220,35 @@ padding: 0 62px;
     margin-bottom: 30px;
 }
 
-/*.blog  {
-    padding: 40px;
-    
-}
-
-.blog__heading {
-text-transform: uppercase;
-font-size: 44px;
-
-
-}
-
-.blog__content {}
-
-
-.post {
-    
-    margin-bottom: 30px;
-
-}
-.post-preview__desc {
+.post-preview_desc {
     padding: 20px 20px 20px 40px;
-   
 }
 
 .post-preview:last-child {
     margin-bottom: 0;
 }
 
-.post-preview_img img {
+.post-preview_img {
+    flex-basis: 565px;
+    flex-shrink: 0;
+}
+.post-preview_img img{
     display: block;
     object-fit: cover;
-
-
+    height: 100%;
+    max-width: 360px;
+    width: 100%;
 }
 
-.post-preview
-
-
-.a5 {
-    position: absolute;
-    background-color: #353a3f;
-    width: none;
-    height: none;
-    margin: auto;
-}
-*/
 footer {
     background-color: #282d32;
-    ;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.nav
-
+.nav-footer::before, .nav-footer::after {
+    display: none;
+}
 
 
 @media 
@@ -261,6 +270,35 @@ footer {
         padding: 10px;
     
     }
+
+   
+     @media 
+   (max-width: 768px){
+   .a1 {
+    flex-direction: column; 
+    padding: 20px;   
+}
+
+
+@media 
+(max-width: 768px){
+.blog__heading {
+ 
+ padding: 20px;   
+ display: inline-block;
+ 
+}
+@media 
+(max-width: 768px){
+.post-preview_img img {
+ 
+ padding: 20px;   
+ display: inline;
+ height: 100px;
+ 
+}
+
+
    }
    .toggle:checked + ul {
 display: none;
