@@ -1,0 +1,11 @@
+.nav-footer {
+    background-color: #35383a;
+    flex-direction: row;
+   list-style: none;
+    position: flex;
+}
+
+.nav-footer:before, .nav-footer:after {
+    display: none;
+
+}
