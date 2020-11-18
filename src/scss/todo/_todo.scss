@@ -12,72 +12,13 @@
     
         
     
-        .logo {
-            text-align:center ;
-            position: relative;
-        }
-        
-        .logo > p {
-        
-            font-size: 32px;
-            color: #4cb480;;
-        }
-        .logo > p:after {
-            display: block;
-            content: "";
-            width: 50px;
-            height: 4px;
-            background-color: #4cb480;
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            }
-    
-        .searchicon {
-            padding: 20px 0;
-            text-align: center;
-        }
-         
-        
-        
-        .searchicon svg {
-            fill: blanchedalmond;
-            width: 25px;
-            
-        }
-    
-    .nav {
-        position: relative;
-    }
-    
-    .nav > ul {
-        list-style: none;
-        color: blanchedalmond;
-        line-height: 35px;
-        
-        
-    }
-    .nav a {
-        text-decoration: none;
-        color: blanchedalmond;
-    
-    }
+
     
     
-    .nav::after .nav::before  {
-       
-        display: block;
-        content: "" ;
-        position: absolute;
-        background-color:white;
-        align-content: center;
-        width: 90px;
-        height: 2px;
-        bottom: -28px;
-        left: 50% ;
-        transform: translateX(-50%);
-    }
+   
+    
+    
+    
     
     .main-content {
         margin-left: 150px;
@@ -170,7 +111,6 @@
     
     
     .blog {
-        padding: 40px;
         
     }
     
@@ -226,19 +166,7 @@
     }
        }
     
-     @media 
-       (max-width: 768px){
-        .aside {
-            width: auto;
-            height: auto;
-            background-color: #282d32;
-            position: relative;
-            top: 0;
-            left: 0;
-            padding: 10px;
-            
-        
-        }}
+     
     
        
     @media 
@@ -268,7 +196,7 @@
      
     }}
     
-      .toggle:checked + ul {
+      .toggle:checked ~ ul {
        display:none;
     
        }
