@@ -18,5 +18,12 @@
   "description": "",
   "dependencies": {
     "sass": "^1.29.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "browsersync": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
   }
 }
