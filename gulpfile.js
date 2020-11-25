@@ -8,7 +8,7 @@ const browserSync = require ('browser-sync').create();
 function styles() {
     return gulp.src('src/scss/main.scss')
         .pipe(sass())
-        .pipe (cssnano())
+        //.pipe (cssnano())
         .pipe(rename('styles.css'))
         .pipe(gulp.dest('./'))
         .pipe(browserSync.stream());
@@ -22,6 +22,7 @@ function watch() {
         }
     });
     gulp.watch('src/scss/**/*.scss', styles)
+    gulp.watch('index.html').on('change',browserSync.reload);
 }
 
 exports.watch = watch;
