@@ -7,15 +7,7 @@
     padding: 10px;
     height: 100ch;
   }
-  .searchicon {
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .searchicon svg {
-    fill: blanchedalmond;
-    width: 25px;
-  }
+
   
   @media 
        (max-width: 768px){
@@ -41,16 +33,19 @@
       .logo > p {
       
           font-size: 32px;
-          color: #4cb480;;
+          color: #4cb480;
+          margin-top: 141px;
       }
       .logo > p:after {
-          display: block;
-          content: "";
-          width: 50px;
-          height: 4px;
-          background-color: #4cb480;
-          position: absolute;
-          bottom: auto;
-          left: 50%;
-          transform: translateX(-50%);
+        display: block;
+        content: "";
+        width: 26px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #4cb480;
+        position: absolute;
+        bottom: auto;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
           }

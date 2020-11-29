@@ -13,22 +13,46 @@
  
 .a1 {
     position: relative;
-    text-align:center;
     text-align: left;
     line-height: normal;
-    padding: 200px;
+    padding: 240px;
     padding-left: 325px;
     line-height: 36px;
     font-size: 22px;
-    
-}
+    background-color: #353a3d;
+    padding-bottom: 186px;
+   }
 
 .a1 > h1 {
-    width: 589px;
-    height: 46px;
+    
+    
     font-style: normal;
     line-height: normal;
-    margin-bottom: 58px;
+    margin-top: 89px;
+    font-weight: normal;
+    font-size: 280%;
+    letter-spacing: 3px;
+    color: wheat;
+}
+
+h3 {
+
+font-weight: normal;
+letter-spacing: 3px;
+color: wheat;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 0px;
+    width: 58px;
+    border: 2px solid #4cb480;
+    border-radius: 5px;
+    top: -25px;
+    margin-top: -3px;
+
 }
 
 .a1 p {
@@ -40,12 +64,11 @@
     position: relative;
     text-align: center;
     font-size: 18px;
-    font-weight: 300;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.45px;
     background-color: white;
-    padding: 25px 0;
+    padding: 139px 0;
    
 }
 
