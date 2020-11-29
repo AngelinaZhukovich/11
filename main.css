@@ -68,7 +68,7 @@
   text-align: left;
   line-height: normal;
   padding: 200px;
-  padding-left: 200px;
+  padding-left: 325px;
   line-height: 36px;
   font-size: 22px;
 }
@@ -211,6 +211,8 @@
   list-style: none;
   color: blanchedalmond;
   line-height: 35px;
+  position: stiky;
+  top: 0;
 }
 
 .nav a {
