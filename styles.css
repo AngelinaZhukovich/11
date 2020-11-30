@@ -176,10 +176,9 @@ h1::before {
     height: 100px; } }
 
 .nav-footer {
-  background-color: #35383a;
   flex-direction: row;
   list-style: none;
-  position: flex; }
+  display: flex; }
 
 .nav-footer:before, .nav-footer:after {
   display: none; }
@@ -321,7 +320,8 @@ button {
 
 button a {
   text-decoration: none;
-  font-size: large; }
+  font-size: large;
+  color: wheat; }
 
 .icon {
   position: absolute; }
