@@ -1,0 +1,21 @@
+$color-primary: #4cb480;
+
+
+%decoration-line {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 58px;
+    background-color: $color-primary;
+}
+
+
+@mixin decoration-line($width, $height) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: $color-primary;
+}

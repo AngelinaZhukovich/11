@@ -1,11 +1,10 @@
 .nav-footer {
-    
-    flex-direction: row;
-   list-style: none;
-    display: flex;
+  flex-direction: row;
+  list-style: none;
+  display: flex;
 }
 
-.nav-footer:before, .nav-footer:after {
-    display: none;
-
+.nav-footer:before,
+.nav-footer:after {
+  display: none;
 }
