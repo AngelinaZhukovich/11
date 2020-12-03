@@ -33,7 +33,7 @@
       .logo > p {
       
           font-size: 32px;
-          color: #4cb480;
+          color: $color-primary;
           margin-top: 141px;
       }
       .logo > p:after {
@@ -42,7 +42,7 @@
         width: 26px;
         height: 4px;
         border-radius: 4px;
-        background-color: #4cb480;
+        background-color: $color-primary;
         position: absolute;
         bottom: auto;
         top: 40px;

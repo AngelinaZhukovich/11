@@ -1,200 +1,216 @@
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>SDS</title>
-     <link rel="stylesheet" href="./fonts.css">
-     <link rel="stylesheet" href="./styles.css">
-     
-   
- </head>
- <body> 
-     <div class="wrapper">
-             <div class="aside"> 
-                 <div class="logo">
-                     <p>SDS</p>
-                 </div>
+<html lang="en">
 
-                    <div class="nav">
-                        
-                     <!-- <input class="toggle" type="checkbox"> <span>КНОПКА</span> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./styles.css">
 
-                       <label class="switch">
-                            <input  class="toggle-button" type="checkbox">
-                            <span class="slider_round"></span>
-                        </label>
-                        
-                       <ul>
-                          <li> <a href=""> WORK</a> </li>
-                          <li> <a href=""> ABOUT</a> </li>
-                          <li> <a href=""> SERVICES</a> </li>
-                          <li> <a href=""> BLOG</a> </li>
-                          <li> <a href=""> CONTACT</a> </li>
-                       </ul>
-                       
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="aside">
+            <div class="logo">
+                <p>SDS</p>
+            </div>
+            
+            <div class="nav nav--decorated nav--mobile">
+                <label class="nav__toggle-label" for="nav__toggle">BUTTON</label>
+                <input id="nav__toggle" class="nav__toggle" type="checkbox"> 
+
+                <!-- <label class="switch">
+                    <input class="toggle-button" type="checkbox">
+                    <span class="slider_round"></span>
+                </label> -->
+
+                <ul class="nav__list">
+                    <li class="nav__li"> <a class="nav__link nav__link--active" href="#"> WORK</a> </li>
+                    <li class="nav__li"> <a class="nav__link" href="#"> ABOUT</a> </li>
+                    <li class="nav__li"> <a class="nav__link" href="#"> SERVICES</a> </li>
+                    <li class="nav__li"> <a class="nav__link" href="#"> BLOG</a> </li>
+                    <li class="nav__li"> <a class="nav__link" href="#"> CONTACT</a> </li>
+                </ul>
+
+            </div>
+
+
+            <div class="search">
+                <div class="searchicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M225.5 0C101.2 0 0 101.2 0 225.5c0 124.3 101.2 225.5 225.5 225.5 124.3 0 225.5-101.1 225.5-225.5C450.9 101.2 349.8 0 225.5 0zM225.5 409.3c-101.4 0-183.8-82.5-183.8-183.8S124.1 41.6 225.5 41.6s183.8 82.5 183.8 183.8S326.8 409.3 225.5 409.3z" />
+                        <path
+                            d="M505.9 476.5L386.6 357.1c-8.1-8.1-21.3-8.1-29.4 0 -8.1 8.1-8.1 21.3 0 29.4l119.3 119.3c4.1 4.1 9.4 6.1 14.7 6.1 5.3 0 10.6-2 14.7-6.1C514 497.8 514 484.6 505.9 476.5z" />
+                        </svg>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="main-content">
+            <div class="a1">
+
+                <h1> TITLE OF THE PAGE</h1>
+                <h3>SUBTITLE</h3>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores cupiditate consequuntur
+                    delectus ab est explicabo mollitia consectetur similique, eum deleniti earum molestias praesentium a
+                    ullam odio tempora ratione consequatur alias.</p>
+                <button class="post-preview_buttom"> <a href="">BUTTON</a> </button>
+            </div>
+
+            <div class="services">
+                <div class="content-wrap">
+                    <div class="item">
+                        <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40"
+                                height="32">
+                                <path
+                                    d="M446.575 0H65.425C29.349 0 0 29.35 0 65.426v381.149C0 482.65 29.349 512 65.425 512h381.15C482.651 512 512 482.65 512 446.574V65.426C512 29.35 482.651 0 446.575 0zm35.267 446.575c0 19.447-15.821 35.267-35.267 35.267H65.425c-19.447 0-35.268-15.821-35.268-35.267v-55.007l99.255-84.451a9.745 9.745 0 0112.562-.075l62.174 51.628c5.995 4.977 14.795 4.569 20.304-.946L372.181 209.77c2.67-2.675 5.783-2.935 7.408-2.852 1.62.083 4.695.661 7.078 3.596l95.176 117.19v118.871zm0-166.71l-71.766-88.366a39.98 39.98 0 00-28.942-14.701c-11.268-.57-22.317 3.672-30.294 11.662L212.832 326.681l-51.59-42.839a39.85 39.85 0 00-51.373.308l-79.712 67.822V65.426c0-19.447 15.821-35.268 35.268-35.268h381.15c19.447 0 35.267 15.821 35.267 35.268v214.439z" />
+                                <path
+                                    d="M161.174 62.995c-40.095 0-72.713 32.62-72.713 72.713 0 40.094 32.619 72.713 72.713 72.713s72.713-32.619 72.713-72.713-32.618-72.713-72.713-72.713zm0 115.269c-23.466 0-42.556-19.091-42.556-42.556 0-23.466 19.09-42.556 42.556-42.556 23.466 0 42.556 19.091 42.556 42.556s-19.09 42.556-42.556 42.556z" />
+                                </svg> </div>
+                        <div class="content">
+                            <h3 class="itemtitly">FOTOS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+                                nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                                Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p> <button
+                                class="post-preview_buttom"> <a href="">BUTTON</a> </button>
+    
+                        </div>
                     </div>
+    
+                    <div class="item">
+                        <div class="icon">
+                            <svg enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="40"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m338.95 243.28-120-75c-4.625-2.89-10.453-3.043-15.222-.4-4.77 2.643-7.729 7.667-7.729 13.12v150c0 5.453 2.959 10.476 7.729 13.12 2.266 1.256 4.77 1.88 7.271 1.88 2.763 0 5.522-.763 7.95-2.28l120-75c4.386-2.741 7.05-7.548 7.05-12.72s-2.663-9.979-7.049-12.72zm-112.95 60.656v-95.873l76.698 47.937z" />
+                                    <path
+                                        d="m437 61h-362c-41.355 0-75 33.645-75 75v240c0 41.355 33.645 75 75 75h362c41.355 0 75-33.645 75-75v-240c0-41.355-33.645-75-75-75zm45 315c0 24.813-20.187 45-45 45h-362c-24.813 0-45-20.187-45-45v-240c0-24.813 20.187-45 45-45h362c24.813 0 45 20.187 45 45z" />
+                                </g>
+                            </svg> </div>
+                        <div class="content">
+                            <h3 class="itemtitly">VIDEOS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+                                nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                                Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p> <button
+                                class="post-preview_buttom"> <a href="">BUTTON</a> </button>
+    
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867" height="35"
+                                widht="40">
+                                <path
+                                    d="M409.6 153.6h-85.333c-9.426 0-17.067 7.641-17.067 17.067s7.641 17.067 17.067 17.067H409.6c9.426 0 17.067 7.641 17.067 17.067v221.867c0 9.426-7.641 17.067-17.067 17.067H68.267c-9.426 0-17.067-7.641-17.067-17.067V204.8c0-9.426 7.641-17.067 17.067-17.067H153.6c9.426 0 17.067-7.641 17.067-17.067S163.026 153.6 153.6 153.6H68.267c-28.277 0-51.2 22.923-51.2 51.2v221.867c0 28.277 22.923 51.2 51.2 51.2H409.6c28.277 0 51.2-22.923 51.2-51.2V204.8c0-28.277-22.923-51.2-51.2-51.2z" />
+                                <path
+                                    d="M335.947 243.934c-6.614-6.387-17.099-6.387-23.712 0L256 300.134V17.067C256 7.641 248.359 0 238.933 0s-17.067 7.641-17.067 17.067v283.068l-56.201-56.201c-6.78-6.548-17.584-6.361-24.132.419-6.388 6.614-6.388 17.1 0 23.713l85.333 85.333c6.657 6.673 17.463 6.687 24.136.03l.031-.03 85.333-85.333c6.549-6.78 6.361-17.584-.419-24.132z" />
+                                </svg></div>
+                        <div class="content">
+                            <h3 class="itemtitly">DOWNLOADS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+                                nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                                Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p> <button
+                                class="post-preview_buttom"> <a href="">BUTTON</a> </button>
+                            <!-- border rad.. для кнопки 50%-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
 
-                    <div class="search">
-                        <div class="searchicon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.5 0C101.2 0 0 101.2 0 225.5c0 124.3 101.2 225.5 225.5 225.5 124.3 0 225.5-101.1 225.5-225.5C450.9 101.2 349.8 0 225.5 0zM225.5 409.3c-101.4 0-183.8-82.5-183.8-183.8S124.1 41.6 225.5 41.6s183.8 82.5 183.8 183.8S326.8 409.3 225.5 409.3z"/><path d="M505.9 476.5L386.6 357.1c-8.1-8.1-21.3-8.1-29.4 0 -8.1 8.1-8.1 21.3 0 29.4l119.3 119.3c4.1 4.1 9.4 6.1 14.7 6.1 5.3 0 10.6-2 14.7-6.1C514 497.8 514 484.6 505.9 476.5z"/></svg>
+            <!-- <div class="a3">
+                <img src="k.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+                    nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                    Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p>
+            </div> -->
+
+            <!-- <div class="a4">
+                <div class="blog__heading">
+                    <p>FROM THE BLOG</p>
+                </div>
+
+                <div class="blog">
+
+                    <div class="blog__heading">
+                        <div class="post-preview_img">
+                            <img src="https://image.shutterstock.com/image-vector/eyelashes-vector-beauty-makeup-long-600w-1131474431.jpg"
+                                alt="">
+                        </div>
+                        <div class="post-preview_desc">
+                            <h3 class=post-preview_title> Loren ipsum </h3>
+                            <p class="post-preview_text"> Lorem </p>
+                            <div class="post-preview_actions"></div>
+                            <button class="post-preview_buttom"> <a href="">Read more</a> </button>
+
                         </div>
                     </div>
 
-            
-             </div>
 
-            <div class="main-content">
-             <div class="a1"> 
-                 
-                <h1> TITLE OF THE PAGE</h1>
-                <h3>SUBTITLE</h3>
-                <p > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores cupiditate consequuntur delectus ab est explicabo mollitia consectetur similique, eum deleniti earum molestias praesentium a ullam odio tempora ratione consequatur alias.</p>   
+                    <div class="blog__heading">
+                        <div class="post-preview_img">
+                            <img src="https://image.shutterstock.com/image-vector/eyelashes-vector-beauty-makeup-long-600w-1131474431.jpg"
+                                alt="">
+                        </div>
+                        <div class="post-preview_desc">
+                            <h3 class=post-preview_title> Loren ipsum </h3>
+                            <p class="post-preview_text"> Lorem </p>
+                            <div class="post-preview_actions"></div>
+                            <button class="post-preview_buttom"> <a href="">Read more</a> </button>
 
+                        </div>
+                    </div>
+
+
+                    <div class="blog__heading">
+                        <div class="post-preview_img">
+                            <img src="https://image.shutterstock.com/image-vector/eyelashes-vector-beauty-makeup-long-600w-1131474431.jpg"
+                                alt="">
+
+
+
+                        </div>
+                        <div class="post-preview_desc">
+                            <h3 class=post-preview_title> Loren ipsum </h3>
+                            <p class="post-preview_text"> Lorem </p>
+                            <div class="post-preview_actions"></div>
+                            <button class="post-preview_buttom"> <a href="">Read more</a> </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+
+
+            <footer class="footer">
                 
-                
-    
-                <button class="post-preview_buttom"> <a href="">BUTTON</a> </button>
-              
+                <nav class="nav nav--horizontal">
+                    <ul class="nav__list">
+                        <li class="nav__li"> <a class="nav__link" href=""> WORK</a> </li>
+                        <li class="nav__li"> <a class="nav__link" href=""> ABOUT</a> </li>
+                        <li class="nav__li"> <a class="nav__link" href=""> SERVICES</a> </li>
+                        <li class="nav__li"> <a class="nav__link" href=""> BLOG</a> </li>
+                        <li class="nav__li"> <a class="nav__link" href=""> CONTACT</a> </li>
+                    </ul>
+                </nav>
 
-             </div> 
-
-            <div class="a2" >
-                <div class="services" >
-                    <div class="item">  
-                    <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="32" ><path d="M446.575 0H65.425C29.349 0 0 29.35 0 65.426v381.149C0 482.65 29.349 512 65.425 512h381.15C482.651 512 512 482.65 512 446.574V65.426C512 29.35 482.651 0 446.575 0zm35.267 446.575c0 19.447-15.821 35.267-35.267 35.267H65.425c-19.447 0-35.268-15.821-35.268-35.267v-55.007l99.255-84.451a9.745 9.745 0 0112.562-.075l62.174 51.628c5.995 4.977 14.795 4.569 20.304-.946L372.181 209.77c2.67-2.675 5.783-2.935 7.408-2.852 1.62.083 4.695.661 7.078 3.596l95.176 117.19v118.871zm0-166.71l-71.766-88.366a39.98 39.98 0 00-28.942-14.701c-11.268-.57-22.317 3.672-30.294 11.662L212.832 326.681l-51.59-42.839a39.85 39.85 0 00-51.373.308l-79.712 67.822V65.426c0-19.447 15.821-35.268 35.268-35.268h381.15c19.447 0 35.267 15.821 35.267 35.268v214.439z"/><path d="M161.174 62.995c-40.095 0-72.713 32.62-72.713 72.713 0 40.094 32.619 72.713 72.713 72.713s72.713-32.619 72.713-72.713-32.618-72.713-72.713-72.713zm0 115.269c-23.466 0-42.556-19.091-42.556-42.556 0-23.466 19.09-42.556 42.556-42.556 23.466 0 42.556 19.091 42.556 42.556s-19.09 42.556-42.556 42.556z"/></svg> </div>
-                    <div class="content">
-                        <h3 class="itemtitly">FOTOS</h3> 
-                        <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
-                            nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
-                            Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p> <button class="post-preview_buttom"> <a href="">BUTTON</a> </button>
-
-                    </div>
-                    </div>
-             
-                    <div class="item"> 
-                    <div class="icon"> 
-                        <svg enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m338.95 243.28-120-75c-4.625-2.89-10.453-3.043-15.222-.4-4.77 2.643-7.729 7.667-7.729 13.12v150c0 5.453 2.959 10.476 7.729 13.12 2.266 1.256 4.77 1.88 7.271 1.88 2.763 0 5.522-.763 7.95-2.28l120-75c4.386-2.741 7.05-7.548 7.05-12.72s-2.663-9.979-7.049-12.72zm-112.95 60.656v-95.873l76.698 47.937z"/><path d="m437 61h-362c-41.355 0-75 33.645-75 75v240c0 41.355 33.645 75 75 75h362c41.355 0 75-33.645 75-75v-240c0-41.355-33.645-75-75-75zm45 315c0 24.813-20.187 45-45 45h-362c-24.813 0-45-20.187-45-45v-240c0-24.813 20.187-45 45-45h362c24.813 0 45 20.187 45 45z"/></g></svg> </div>
-                    <div class="content">
-                        <h3 class="itemtitly">VIDEOS</h3> 
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
-                            nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
-                            Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p> <button class="post-preview_buttom"> <a href="">BUTTON</a> </button>
-
-                    </div>
-                    </div>
-            
-                    <div class="item"> 
-                    <div class="icon"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867" height="35" widht="40"><path d="M409.6 153.6h-85.333c-9.426 0-17.067 7.641-17.067 17.067s7.641 17.067 17.067 17.067H409.6c9.426 0 17.067 7.641 17.067 17.067v221.867c0 9.426-7.641 17.067-17.067 17.067H68.267c-9.426 0-17.067-7.641-17.067-17.067V204.8c0-9.426 7.641-17.067 17.067-17.067H153.6c9.426 0 17.067-7.641 17.067-17.067S163.026 153.6 153.6 153.6H68.267c-28.277 0-51.2 22.923-51.2 51.2v221.867c0 28.277 22.923 51.2 51.2 51.2H409.6c28.277 0 51.2-22.923 51.2-51.2V204.8c0-28.277-22.923-51.2-51.2-51.2z"/><path d="M335.947 243.934c-6.614-6.387-17.099-6.387-23.712 0L256 300.134V17.067C256 7.641 248.359 0 238.933 0s-17.067 7.641-17.067 17.067v283.068l-56.201-56.201c-6.78-6.548-17.584-6.361-24.132.419-6.388 6.614-6.388 17.1 0 23.713l85.333 85.333c6.657 6.673 17.463 6.687 24.136.03l.031-.03 85.333-85.333c6.549-6.78 6.361-17.584-.419-24.132z"/></svg></div>
-                    <div class="content">
-                        <h3 class="itemtitly">DOWNLOADS</h3> 
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
-                            nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
-                            Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p> <button class="post-preview_buttom"> <a href="">BUTTON</a> </button>
-<!-- border rad.. для кнопки 50%-->
-                    </div>
-                    </div>
-                    
-
-                </div>
-
-
-            </div>
-
-                       
-            <div class="a3">
-                <img src="k.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
-                    nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
-                    Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p>
-
-
-            </div>
+            </footer>
 
 
 
 
-<div class="a4">
-    <div class="blog__heading"><p>FROM THE BLOG</p> 
-    </div> 
 
-    <div class="blog">
-
-        <div class="blog__heading"> 
-            <div class="post-preview_img">
-                <img src="https://image.shutterstock.com/image-vector/eyelashes-vector-beauty-makeup-long-600w-1131474431.jpg" alt="">
-            </div>
-                <div class="post-preview_desc">
-                    <h3 class=post-preview_title> Loren ipsum </h3>
-                    <p class="post-preview_text"> Lorem </p>
-                    <div class="post-preview_actions"></div>
-                    <button class="post-preview_buttom"> <a href="">Read more</a> </button>
-
-                </div>
         </div>
 
-        
-        <div class="blog__heading">
-            <div class="post-preview_img">
-                <img src="https://image.shutterstock.com/image-vector/eyelashes-vector-beauty-makeup-long-600w-1131474431.jpg" alt="">
-            </div>
-                <div class="post-preview_desc">
-                    <h3 class=post-preview_title> Loren ipsum </h3>
-                    <p class="post-preview_text"> Lorem </p>
-                    <div class="post-preview_actions"></div>
-                    <button class="post-preview_buttom"> <a href="">Read more</a> </button>
+</body>
 
-                </div>
-        </div>
-
-
-        <div class="blog__heading">
-            <div class="post-preview_img">
-                <img src="https://image.shutterstock.com/image-vector/eyelashes-vector-beauty-makeup-long-600w-1131474431.jpg" alt="">
-            
-
-            
-            </div>
-                <div class="post-preview_desc">
-                    <h3 class=post-preview_title> Loren ipsum </h3>
-                    <p class="post-preview_text"> Lorem </p>
-                    <div class="post-preview_actions"></div>
-                    <button class="post-preview_buttom"> <a href="">Read more</a> </button>
-
-                </div>
-        </div>
-
-    </div>                            
-</div>
-
-
-<footer class="footer">
-    <nav class="nav-footer">
-   
-       <ul class="footer_ul">
-          <li> <a href=""> WORK</a> </li>
-          <li> <a href=""> ABOUT</a> </li>
-          <li> <a href=""> SERVICES</a> </li>
-          <li> <a href=""> BLOG</a> </li>
-          <li> <a href=""> CONTACT</a> </li>
-       </ul>
-        
-    
-        
-    
-     <div class="vk"> llplpl
-
-     </div>
-    </nav>
-
-</footer>
-
-            
-              
-
-         
-     </div>
-
-    </body>
- </html>
+</html>
