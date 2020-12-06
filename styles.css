@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .aside {
   width: 150px;
   background-color: #282d32;
@@ -99,7 +100,7 @@ h1::before {
 
 .services {
   padding: 90px 0;
-  background-color: white;
+  background-color: #ffffff;
   padding: 90px 120px; }
   @media (max-width: 1200px) {
     .services {
@@ -111,6 +112,7 @@ h1::before {
       .services .content-wrap {
         flex-direction: column; } }
   .services__item {
+    position: relative;
     flex-basis: 360px;
     border-radius: 6px;
     background-color: #f6f6f6;
@@ -124,15 +126,39 @@ h1::before {
   .services .item p {
     line-height: 30px; }
   .services .icon svg {
-    fill: #4cb480; }
+    fill: #4cb480;
+    position: relative;
+    top: 16px; }
+  .services .itemtitly {
+    color: black;
+    margin: 50px 0 0; }
+
+.item {
+  position: relative;
+  text-align: center;
+  flex-basis: 360px;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  padding: 0 62px;
+  margin-right: 15px; }
 
 .icon {
-  fill: #4cb480; }
+  fill: #4cb480;
+  position: absolute;
+  border-radius: 40px;
+  width: 65px;
+  height: 65px;
+  left: 40%;
+  top: -33px;
+  background-color: #ffffff; }
 
 .a3 {
   padding: 200px;
-  background-color: #282d32;
-  left: auto; }
+  background: #282d32;
+  background-image: url(запяты.svg);
+  background-size: cover;
+  left: auto;
+  position: absolute; }
   .a3 p {
     line-height: 38.02px; }
 
@@ -337,6 +363,3 @@ button a {
   text-decoration: none;
   font-size: large;
   color: white; }
-
-.icon {
-  position: absolute; }
