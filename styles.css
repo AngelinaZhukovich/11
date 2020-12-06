@@ -153,14 +153,15 @@ h1::before {
   background-color: #ffffff; }
 
 .a3 {
-  padding: 200px;
-  background: #282d32;
-  background-image: url(запяты.svg);
+  height: 600px;
+  background: #333a3d;
+  background-image: url(запятые.svg);
   background-size: cover;
   left: auto;
-  position: absolute; }
+  position: relative; }
   .a3 p {
-    line-height: 38.02px; }
+    line-height: 38.02px;
+    margin: 0px; }
 
 .a4 {
   background-color: white;
