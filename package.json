@@ -13,7 +13,9 @@
   "author": "Pavel",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
