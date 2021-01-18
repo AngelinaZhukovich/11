@@ -258,7 +258,7 @@ h1::before {
       align-content: center;
       width: 90px;
       height: 2px;
-      bottom: 280px;
+      bottom: 260px;
       left: 50%;
       transform: translateX(-50%); } }
   .nav--horizontal .nav__list {

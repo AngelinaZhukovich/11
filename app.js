@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express');
 const app = express();
 const { Client } = require('pg')
@@ -13,30 +14,40 @@ const client = new Client({
       console.error('connection error', err.stack)
     } else {
       console.log('connected')
-      client.query(`INSERT INTO Persons (lastname, firstname)
-      VALUES ('john', 'Doe');`,
-    (err, res) => {
-        if (err) {
-             console.log(err)
-        } else {
-            console.log(res);
-        }
-
-    }
-)
     }
   })
 
+app.set('view engine', 'pug');
 
-app.use(express.static('dist'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
     res.send('Hello');
 });
 
+app.get('/main', function(req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
+
+
+app.get('/userlist', function(req, res){
+
+client.query('SELECT * FROM Persons', function(err, response){
+      if (err) {
+          res.send('Error');
+      } else {
+          res.render('index', { title: 'Awesome page', users: response.rows});
+      }
+  })
+
+})
 
 
 
 app.listen(3000, function() {
     console.log('sucess');
 });
+
+app.get ('/adduser', function(req, res){
+  res.render('addUser');
+})
