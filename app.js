@@ -55,6 +55,11 @@ app.get ('/adduser', function(req, res){
 });
 
 app.post('/createUser', function(req,res){
+  console.log(req.body.firstname);
+  if (req.body.firstname.length < 1 || req.body.fastname.length <1 ){
+    return req.status(400).send ({error: 'irstname or lastname is empty'});
+  }
+
   client.query(`INSERT 
                 INTO Persons (firstname, lastname) 
                 VALUES ('${req.body.firstname}', '${req.body.lastname}')`, (err, result)=>{

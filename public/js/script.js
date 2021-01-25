@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const form = document.querySelector('#form');
     const btn = document.querySelector('.btn');
+    const statusConteiner = document.querySelector('.status');
+    
 
 
     btn.addEventListener('click', function(e) {
@@ -22,17 +24,28 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             body: JSON.stringify(data)
         }).then((response) => {
-            console.log(response);
-            return response.json();
-
-            
+            statusContainer.innerHTML = '';
+            return Promise.all([response.ok, response.json()]);
           })
           .then((data) => {
             console.log(data);
-            form.insertAdjacentHTML('beforeend', `<p class="alert alert-success">Insertrd </p>`)
+            if (!data[0]) {
+                throw Error(data[1].error);
+            }
+            statusContainer.insertAdjacentHTML('beforeend', '<p class="alert alert-success">Inserted</p>');
+            setTimeout(() => {
+                statusContainer.innerHTML = '';
+            }, 3000);
+          }).catch((error) => {
+            console.log(error);
+            statusContainer.insertAdjacentHTML('beforeend', `<p class="alert alert-danger">${error}</p>`);
+            setTimeout(() => {
+                statusContainer.innerHTML = '';
+            }, 3000);
 
-
-
-          });
+        //   }).catch((error)=>{
+        //       console.log('Error: ', error.error);
+        //       statusConteiner.insertAdjacentHTML('beforeend', `<p class="alert alert-danger"> Error </p>`);
+          })
     });
 });
