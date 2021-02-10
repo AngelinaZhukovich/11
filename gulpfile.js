@@ -10,7 +10,7 @@ function styles() {
         .pipe(sass())
         //.pipe (cssnano())
         .pipe(rename('styles.css'))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('./public.css'))
         .pipe(browserSync.stream());
 }
 
